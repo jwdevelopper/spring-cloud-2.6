@@ -16,6 +16,7 @@ public class ProductService {
     private final ProductClient productClient;
 
     public List<Product> listProducts() {
+        System.out.println("Chamou");
         List<Product> result = new ArrayList<>();
         for (int i = 0; i <= 99; i++) {
             Product product = productClient.product().getBody();

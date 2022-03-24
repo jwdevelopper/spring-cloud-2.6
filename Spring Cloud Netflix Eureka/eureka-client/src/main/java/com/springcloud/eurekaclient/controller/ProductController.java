@@ -14,6 +14,7 @@ public class ProductController {
 
     @GetMapping
     public ResponseEntity<Produtc> getProduct(){
+        System.out.println("Chamou");
         var p = new Produtc("Description", new BigDecimal(12.99));
         return ResponseEntity.ok().body(p);
     }
